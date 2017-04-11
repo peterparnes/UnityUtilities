@@ -1,7 +1,10 @@
-﻿// Peter Parnes, peter@parnes.com, 20170406 
+// Peter Parnes, peter@parnes.com, 20170406 
 //
-// Convert to movie via ImageMagick 
-// convert -quality 100 Frame_20170406_020819_0* movie.m4v
+// Convert to movie using ffmpeg // fast 
+// ffmpeg -v verbose -framerate 60 -i 'Frame_20170411_094556_%04d.png' movie.m4v
+//
+// Convert to movie via ImageMagick // slow 
+// convert -quality 100 Frame_20170406_020819_0* movie.m4v  // slow 
 
 using UnityEngine;
 using System.Collections;
